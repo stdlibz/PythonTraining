@@ -1,0 +1,25 @@
+#!/usr/bin/python
+import random
+def Overlap ( List1, List2):
+	list = []
+	if (len(List1) < len(List2)):
+		L1 = List1
+		L2 = List2
+	else:
+		L1 = List2
+		L2 = List1
+
+	for i in L1:
+		if i in L2:
+			list.append(i)
+	return list
+
+def CreateLists():
+	list = [[] for i in range(2)]
+	for i in range((len(list))):
+		NumOfItems = random.randint(10,20)
+		for a in range(NumOfItems):
+			list[i].append(random.randint(0,100))
+	return Overlap (list[0],list[1])
+
+print CreateLists()

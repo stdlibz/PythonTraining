@@ -1,0 +1,9 @@
+#!/usr/bin/python
+def CharInput ( Name, yearofBirth, numOfTimes ):
+	while ( numOfTimes > 0 ):
+		print "Hi " + Name + " Your 100 Birthday will be on " + str(yearofBirth+100)
+		numOfTimes-=1
+
+name = str(raw_input("Please Enter Your Name: "))
+year = int(raw_input("Please Enter Your Birth year: "))
+CharInput(name,year,5)

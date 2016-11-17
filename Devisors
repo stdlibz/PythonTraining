@@ -1,0 +1,13 @@
+#!/usr/bin/python
+def Devisors ( num ):
+	i = 1
+	list = []
+	while ( i <= num ):
+		if ( num % i == 0 ):
+			list.append(i)
+		i+=1
+	list.append(num)
+	return list
+
+print Devisors(int(raw_input("Please enter a number: ")))
+

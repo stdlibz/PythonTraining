@@ -1,0 +1,17 @@
+#!/usr/bin/python
+def Palindrome( testme ):
+	interval = 0
+	res = 1
+	testme = list ( testme )
+	for i in range(0,len(testme)/2):
+		if (testme[i] != testme[len(testme)-1-interval]):
+			res = 0
+			break;
+		interval+=1
+
+	if ( res == 1 ):
+		print "Palindrome"
+	else:
+		print "Not Palindrome"
+
+Palindrome(raw_input("Enter A Word: "))

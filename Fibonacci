@@ -1,0 +1,10 @@
+#!/usr/bin/python
+def Fibonacci(numof):
+	list = [1,1]
+	while ( numof > 0 ):
+		list.append(list[len(list)-1]+list[len(list)-2])
+		numof-=1
+	return list
+
+print Fibonacci(int(raw_input("Enter A Number: ")))
+
