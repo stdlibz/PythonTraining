@@ -1,9 +1,11 @@
 #!/usr/bin/python
-def CharInput ( Name, yearofBirth, numOfTimes ):
+import datetime
+def CharInput ( Name, yearsOld, numOfTimes ):
 	while ( numOfTimes > 0 ):
-		print "Hi " + Name + " Your 100 Birthday will be on " + str(yearofBirth+100)
+		print "Hi " + Name + ", You were born on " + str(int(datetime.date.today().year) - int(yearsOld))
 		numOfTimes-=1
 
 name = str(raw_input("Please Enter Your Name: "))
-year = int(raw_input("Please Enter Your Birth year: "))
-CharInput(name,year,5)
+year = int(raw_input("Please Enter How Old You Are: "))
+num = int(raw_input("How Many Times To Print: "))
+CharInput(name,year,num)
