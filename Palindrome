@@ -5,13 +5,10 @@ def Palindrome( testme ):
 	testme = list ( testme )
 	for i in range(0,len(testme)/2):
 		if (testme[i] != testme[len(testme)-1-interval]):
-			res = 0
-			break;
+			print "Not Palindrome!"
+			quit(0)
 		interval+=1
+	print "Palindrome"
 
-	if ( res == 1 ):
-		print "Palindrome"
-	else:
-		print "Not Palindrome"
 
 Palindrome(raw_input("Enter A Word: "))
