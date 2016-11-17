@@ -1,10 +1,9 @@
 #!/usr/bin/python
 def Palindrome( testme ):
-	interval = 0
-	res = 1
+	interval = 1
 	testme = list ( testme )
 	for i in range(0,len(testme)/2):
-		if (testme[i] != testme[len(testme)-1-interval]):
+		if (testme[i] != testme[len(testme)-interval]):
 			print "Not Palindrome!"
 			quit(0)
 		interval+=1
